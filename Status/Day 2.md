@@ -178,6 +178,19 @@ print(",".join(D))
 
 **OR**
 
+from math import sqrt
+
+D = input("Enter 3 number: ").split(",")
+C,H = 50,30
+
+def clac(D):
+  D = int(D)
+  return round(sqrt((2*C*D)/H))
+
+Q = list(map(clac,D))
+
+print(Q)
+
 ```python
 from math import sqrt
 
